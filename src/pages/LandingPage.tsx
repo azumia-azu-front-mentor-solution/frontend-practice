@@ -1,10 +1,17 @@
 
-function Landing() {
-    return (
-        <div>
+const menuItems = [
+  { key: "home", label: "Home" },
+  { key: "features", label: "Features" },
+  { key: "pricing", label: "Pricing" },
+  { key: "blog", label: "Blog" },
+  { key: "dribbble", label: "Dribbble" },
+  { key: "behance", label: "Behance" },
+];
 
-        </div>
-    )
+function Landing() {
+  return (
+    <></>
+  );
 }
 
 export default Landing;
