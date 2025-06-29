@@ -1,3 +1,6 @@
+import { useState } from "react";
+import css from "./Header.module.scss";
+
 type MenuItem = {
   key: string;
   label: string;
@@ -11,12 +14,18 @@ type HeaderProps = {
 };
 
 function Header({ items }: HeaderProps) {
+  const [activeItemKey, setActiveItemKey] = useState<string | null>(null);
+
+  function handleItemClick(item: MenuItem) {
+    setActiveItemKey(item.key);
+  }
+
   return (
-    <header>
+    <header className={css.header}>
       <nav>
         <ul>
           {items.map((item) => (
-            <li key={item.key} style={item.itemStyle}>
+            <li key={item.key} style={item.itemStyle} onClick={() => handleItemClick(item)} className={item.key === activeItemKey ? "active" : ""}>
               <a href={item.href}>
                 {item.icon ? (
                   <img
@@ -36,3 +45,4 @@ function Header({ items }: HeaderProps) {
 }
 
 export default Header;
+export type { HeaderProps, MenuItem };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useArrayRefs from "../../hooks/useArrayRefs";
+import useArrayRefs from "@hooks/useArrayRefs";
 import "./Pagination.module.sass";
 
 type PaginationProps = {

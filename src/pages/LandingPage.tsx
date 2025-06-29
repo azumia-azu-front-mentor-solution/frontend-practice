@@ -1,16 +1,10 @@
 
-const menuItems = [
-  { key: "home", label: "Home" },
-  { key: "features", label: "Features" },
-  { key: "pricing", label: "Pricing" },
-  { key: "blog", label: "Blog" },
-  { key: "dribbble", label: "Dribbble" },
-  { key: "behance", label: "Behance" },
-];
+
 
 function Landing() {
   return (
-    <></>
+    <div style={{backgroundImage: "url('/public/landing-background.png')", backgroundSize: "cover", backgroundPosition: "center", height: "100vh", width: "100vw"}}>
+    </div>
   );
 }
 

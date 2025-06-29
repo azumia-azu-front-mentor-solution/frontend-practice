@@ -1,0 +1,43 @@
+.header {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(110, 110, 110, 0), rgba(131, 131, 131, 0));
+    backdrop-filter: blur(10px);
+
+
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        align-items: end;
+        width: 100%;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            height: 60px;
+
+            a {
+  top: 50%;
+  transform: translateY(-50%);
+                height: 60px;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            :hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                transform: scale(1.1);
+            }
+
+            .active {
+                color: rgba(255, 255, 255, 0.4)
+            }
+        }
+
+    }
+}
